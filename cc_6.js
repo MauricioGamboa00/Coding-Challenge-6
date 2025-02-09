@@ -20,7 +20,7 @@ let calculateSalesTax = function(amount, taxRate) {
 }; // Created a function to calculate sales tax
 
 console.log("Sales Tax: $", calculateSalesTax(100, 0.07)); // Expected Value $7
-console.log("Sales Tax: $", calculateSalesTax(500, 0.01)); // Expected Value $5
+console.log("Sales Tax: $", calculateSalesTax(500, 0.1)); // Expected Value $50
 
 
 // Task 3 Arrow Function 
@@ -61,3 +61,14 @@ return totalCost;
 
 console.log(`Basic 6 Month plan with $10 discount: $${calculateSubscriptionsCost("Basic", 6, 10)}`); // logging basic 6 month plan with $10 discount to console
 console.log(`Premium 12 Month plan with no discount: $${calculateSubscriptionsCost("Premium", 12, 0)}`); // logging premium 12 month plan with no discount to console
+
+// Task 5 Returning Values
+
+let convertCurrency = function(amount, exchangeRate) {
+    let convertedAmount= amount * exchangeRate;
+
+    return convertedAmount;
+};
+
+console.log(`Converted Currency 1: $${convertCurrency(100, 1.1)}`);
+console.log(`Converted Currency 2: $${convertCurrency(250, 0.85)}`);
