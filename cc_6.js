@@ -65,7 +65,7 @@ console.log(`Premium 12 Month plan with no discount: $${calculateSubscriptionsCo
 // Task 5 Returning Values
 
 let convertCurrency = function(amount, exchangeRate) {
-    let convertedAmount= amount * exchangeRate;
+    let convertedAmount= (amount * exchangeRate).toFixed(2);
 
     return convertedAmount;
 }; // Created a function to convert currency
