@@ -19,8 +19,8 @@ let calculateSalesTax = function(amount, taxRate) {
     return salesTax;
 }; // Created a function to calculate sales tax
 
-console.log("Sales Tax: $", calculateSalesTax(100, 0.07)); // Expected Value $7
-console.log("Sales Tax: $", calculateSalesTax(500, 0.1)); // Expected Value $50
+console.log("Sales Tax: $", calculateSalesTax(100, 0.07)); // logging of sale for $100 with sales tax of 7% in console
+console.log("Sales Tax: $", calculateSalesTax(500, 0.1)); // logging of sale for $500 with sales tax of 10% in conole
 
 
 // Task 3 Arrow Function 
@@ -97,3 +97,19 @@ function createExpenseTracker() {
 let tracker = createExpenseTracker();
 console.log(tracker(200)); // logging of total expense of 200 in console
 console.log(tracker(150)); // logging of total expense of 150 in console
+
+// Task 8 Recursion in JavaScript
+
+function calculateYearsToPromotion(employeeLevel) {
+    if (employeeLevel >= 10) {
+        return 0; // No years needed for promotion if level 10
+    };
+
+    let years = (10 - employeeLevel) * 2; // Calculate years required to reach level 10, each promotion takes 2 years
+
+   
+    return `Years to Level 10: ${years}`; // console logging for years required to reach level 10
+}; 
+
+console.log(calculateYearsToPromotion(7)); // level 7 employee 
+console.log(calculateYearsToPromotion(5)); // level 5 employee
